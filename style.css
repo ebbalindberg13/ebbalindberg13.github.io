@@ -7,7 +7,13 @@
   transition: all 2s ease;
 }
 
- @media only screen and (max-width: 500px) {
+     @media only screen and (max-width: 400px) {
+    :root {
+        --edge-margin:5px
+    }
+}
+
+ @media only screen and (max-width: 700px) {
     :root {
         --edge-margin:15px
     }
@@ -264,9 +270,9 @@ left:-36px;
 .projectInfoGrid {
     display: grid;
     grid-template-columns: 1fr 6fr;
+    width: calc(100% - var(--edge-margin));
     margin: auto;
     margin-top:var(--header-height);
-    width: calc(100% - 2 * var(--edge-margin));
 }
 
 .sideNav {
@@ -293,12 +299,24 @@ left:-36px;
     left:0;
 }
 
+.overview {
+  border-style: solid;
+  padding: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-width: 1px;
+  font-family: "open sans";
+  line-height: 1.5;
+}
 
 @media only screen and (max-width: 800px) {
 
   .projectInfoGrid {
      grid-template-columns: 1fr;
-     max-width: 100%;
+    }
+
+    .overview {
+        padding:5px;
     }
 
     .sideNav {
@@ -319,20 +337,11 @@ left:-36px;
 
 }
 
-
 .projectInfo {
     width: 100%;
 }
 
-.overview {
-  border-style: solid;
-  padding: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-width: 1px;
-  font-family: "open sans";
-  line-height: 1.5;
-}
+
 
 .quickInfo {
   display:flex;
@@ -353,7 +362,7 @@ text-align:center;
 }
 
 .projectInfoGrid img {
-    width: 100%;
+    width:100%;
 }
 
 .active {
