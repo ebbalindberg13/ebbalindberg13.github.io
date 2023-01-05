@@ -26,6 +26,10 @@
 
  }  
 
+
+section {
+    padding-top: 20px;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -33,6 +37,12 @@ html {
 li {
     padding-bottom: 10px;
 }
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -80,7 +90,7 @@ ul li:before{
     justify-content: space-between;
 
 }
-.navBar span {
+.menuitem{
     align-self: center;
     position: relative;
     font-weight: normal;
@@ -88,7 +98,7 @@ ul li:before{
     width:70px;
 }
 
-.navBar span:first-of-type {
+.menuitemBold{
     font-weight: 400;
 }
 
@@ -103,7 +113,6 @@ ul li:before{
     left: calc(var(--edge-margin)*0.25);
     top: 15px;
 }
-
 
 .footer {
     width: calc(100% - var(--edge-margin));
@@ -187,7 +196,7 @@ ul li:before{
   position: absolute;
 font-family: "Tahoma";
 transform: rotate(-90deg);
-bottom:0;
+bottom:-8px;
 left:-36px;
 }
 
@@ -202,7 +211,7 @@ left:-36px;
 
 #projectGrid {
     margin: auto;
-    width: calc(100% - var(--edge-margin)/2);
+    width: calc(100% - var(--edge-margin));
     position: relative;
     display: grid;
     grid-gap: 13px;
@@ -270,7 +279,7 @@ left:-36px;
 .projectInfoGrid {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    width: calc(100% - var(--edge-margin));
+    width: calc(100% - 2*var(--edge-margin));
     margin: auto;
     margin-top:var(--header-height);
 }
@@ -447,6 +456,11 @@ text-align:center;
         justify-content: space-around;
     }
 
+    .projectInfoGrid {
+    width: calc(100% - var(--edge-margin));
+    margin: auto;
+}
+
 }
 
 .category {
@@ -455,7 +469,7 @@ text-align:center;
 }
 
 .feauturedProject {
-    margin-left: calc(var(--edge-margin)*0.25);
+    margin-left: calc(var(--edge-margin)*0.5);
     margin-top:150px;
 }
 
@@ -489,7 +503,7 @@ text-align:center;
 
 .aboutMe img {
     margin:auto;
-    max-width: 600px;
+    width:100%;
 }
 
 .amGridItem h1 {
@@ -502,4 +516,10 @@ text-align:center;
     grid-template-columns: 1fr;
 
 }
+}
+
+.renticoFlex {
+    display:flex;
+    gap:5%;
+    justify-content: space-around;
 }
