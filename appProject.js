@@ -7,37 +7,37 @@ var purpleWhenScrolling = function() {
 	if(230 >= window.scrollY && window.scrollY > 200) {
 		console.log("hi");
 		document.documentElement.style
-			.setProperty('--main-color', '#feb44c');
+			.setProperty('--main-color', '#ffaa33');
 	} 
 
 	else if ( 260 >= window.scrollY && window.scrollY > 231) {
 		document.documentElement.style
-			.setProperty('--main-color', '#fdc068');
+			.setProperty('--main-color', '#ffb54d');
 	}
 
 	else if ( 290 >= window.scrollY && window.scrollY > 261) {
 		document.documentElement.style
-			.setProperty('--main-color', '#fccb85');
+			.setProperty('--main-color', '#ffbf66');
 	}
 
 	else if ( 320 >= window.scrollY && window.scrollY > 291) {
 		document.documentElement.style
-			.setProperty('--main-color', '#fbd6a1');
+			.setProperty('--main-color', '#ffd599');
 	}
 
 	else if ( 350 >= window.scrollY && window.scrollY > 321) {
 		document.documentElement.style
-			.setProperty('--main-color', '#fae1bd');
+			.setProperty('--main-color', '#ffdfb3');
 	}
 
 	else if ( 380 >= window.scrollY && window.scrollY > 351) {
 		document.documentElement.style
-			.setProperty('--main-color', '#faecd9');
+			.setProperty('--main-color', '#fff4e6');
 	}
 
 	else if (window.scrollY > 291) {
 		document.documentElement.style
-			.setProperty('--main-color', ' #f9f4ec');
+			.setProperty('--main-color', '#ffffff');
 	}
 
 	else {
