@@ -176,6 +176,7 @@ align-content: center;
     height: 100%;
     width: 100%;
     border-style: solid;
+    border-width: 1px;
     position: absolute;
     right: 30px;
     top: 30px;
@@ -272,7 +273,7 @@ left:-36px;
 }
 
 .description {
-    font-family: "open sans";
+    font-family: "oswald";
     line-height: 1.5;
     font-size: 11pt;
 }
