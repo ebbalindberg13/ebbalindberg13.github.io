@@ -80,11 +80,9 @@ ul li:before{
 .navBar {
     font-family: "oswald";
     background-color: var(--main-color);
-    width: 200px;
+    width: 100%;
     height: var(--header-height);
     position:fixed;
-    padding-left: calc(100% - 200px - var(--edge-margin)*0.25);
-    padding-right: 200px;
     top:0;
     transition: background-color 0.2s ease-in-out;
     z-index: 5;
@@ -93,7 +91,8 @@ ul li:before{
 .listMenu {
     display: flex;
     justify-content: space-between;
-
+    width:200px;
+    margin-left: calc(100% - 200px - var(--edge-margin)*0.25);
 }
 .menuitem{
     align-self: center;
@@ -121,50 +120,37 @@ ul li:before{
 }
 
 .footer {
-    width: calc(100% - var(--edge-margin));
+    width: calc(100% - var(--edge-margin)*0.5);
     margin:auto;
-    margin-top:100px;
-    height: 150px;
-    font-weight: 200;
-    font-size: 14pt;
-}
-
-.footerInfo {
-    text-align: right;
-    font-size: 10pt;
-}
-
-.footerContact {
-    vertical-align: middle;
-}
-
-.contactHeading {
-    font-family: "oswald";
+    margin-top:150px;
+    height:70px;
 }
 
 .footerContent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    float:right;
 }
 
-.linkedIn {
-    height: 30px;
-}
-
-.linkedIn:hover {
+.footerInfo {
+    font-family: "open sans";
+    text-align: right;
+    font-size: 9pt;
     opacity: 0.7;
-    transform: scale(1.02);
 }
 
-.mail {
-    height: 30px;
-    padding-left: 5px;
+.footerContact {
+text-align: right;
+align-content: center;
 }
 
-.mail:hover {
-    opacity: 0.7;
-    transform: scale(1.02);
+.footerContact img {
+    height: 15px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+}
+
+.footerContact img:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
 }
 
 #presentationContainer {
@@ -249,6 +235,7 @@ left:-36px;
     opacity:0;
     display:flex;
     flex-direction: column;
+    background-color: var(--neutral--color);
 }
 
 .gridItem:hover {
@@ -289,6 +276,8 @@ left:-36px;
     width: calc(100% - 2*var(--edge-margin));
     margin: auto;
     margin-top:var(--header-height);
+    line-height: 1.8;
+    font-size: 11pt;
 }
 
 .sideNav {
@@ -313,14 +302,18 @@ left:-36px;
     list-style: none;
     text-align: right;
     left:0;
+    font-size: 12pt;
 }
 
 .overview {
   background-color: #ffa930;
   padding: 40px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   position:relative;
+  width:80%;
+  margin: auto;
+  margin-bottom:20px;
 }
 
 .overview::after {
@@ -381,8 +374,6 @@ text-align:center;
 
 .projectInfoGrid img {
     width:100%;
-    font-family: 'open sans';
-    line-height: 1.5;
 }
 
 .active {
@@ -412,7 +403,11 @@ text-align:center;
 
   .navBar {
     width: auto;
-    padding-left: 0;
+  }
+
+  .listMenu {
+    margin:auto;
+    font-size: 15pt;
   }
 
   .hamburgerMenu span {
@@ -474,7 +469,8 @@ text-align:center;
 }
 
 .category {
-    font-weight: 200;
+    font-family: 'Open sans';
+    font-weight: 300;
     font-size: 10pt;
 }
 
@@ -532,4 +528,9 @@ text-align:center;
     display:flex;
     gap:5%;
     justify-content: space-around;
+}
+
+.video {
+    width:100%;
+    height:500px;
 }
