@@ -46,8 +46,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1{
-    padding-top:30px;
-    padding-bottom:20px;
+    padding-top:0px;
+    padding-bottom:10px;
 }
 
 body {
@@ -271,12 +271,14 @@ left:-36px;
     margin-top:var(--header-height);
     line-height: 1.8;
     font-size: 11pt;
+    grid-gap: 20px;
 }
 
 
-
-
-
+.projectInfo img {
+    padding-top:2em;
+    padding-bottom:2em;
+}
 
 .sideNav {
     font-family: "oswald";
@@ -285,9 +287,9 @@ left:-36px;
   flex-direction: column;
   justify-content: space-around;
   font-weight:200;
-  top: 60px;
   height: 70vh;
-  width: calc((100% / 7 - 2* var(--edge-margin) / 7));
+  margin-top: calc(15vh - var(--header-height));
+
 }
 
 .sideNav div:hover{
@@ -319,6 +321,7 @@ left:-36px;
     height: 100%;
     width: 100%;
     border-style: solid;
+    border-width: 1px;
     position: absolute;
     left: 10px;
     top: 10px;
