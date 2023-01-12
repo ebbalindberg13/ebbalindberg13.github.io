@@ -29,7 +29,8 @@
       <div class="grid-item-1">
         <div class="sideNav">
           <div id="overview">Overview</div>
-          <div id="process">Styling</div>
+           <div id="overview">Requirements</div>
+          <div id="process">Wireframes</div>
           <div id="result">Result</div>
           <div id="reflection">Reflection</div>        
         </div>
@@ -39,11 +40,11 @@
         <h1>Rentico</h1>
         <section class="overview" id="overviewDiv">
           <p><b>Overview</b><br>
-          TaskCollab is an app for hybrid remote collaboration with a backlog feauture. This was part of my Graphical Interface course where the task was to create a video conferencing app that supported hybrid meetings. There are a lot of problems when having hybrid meetings, especially if people are connected with multiple devices in the meeting room. Continue reading to see how we solved the problem!</p><br>
+          TaskCollab is an app for hybrid remote collaboration with a backlog feature. This was part of my Graphical Interface course where the task was to create a video conferencing app that supported hybrid meetings. There are a lot of problems when having hybrid meetings such as audio feedback or unsynchronized sound if people are connected with multiple devices in the meeting room. Continue reading to see how we solved the problem!</p><br>
 
           <div class="quickInfo">
             <div><b class="headingQuickInfo">When</b><br>Autumn 2021</div>
-            <div><b>Team</b><br>Ebba Lindberg, Geoffrey Chen,<br>Norea Sandgren, Maja Ulen, Panpan Zhang</div>
+            <div><b>Team members</b><br> Geoffrey Chen, Norea Sandgren, <br> Maja Ulen, Panpan Zhang</div>
             <div><b>Methods</b><br>Sketching, wireframing, prototyping</div>
           </div>
         </section>
@@ -51,28 +52,45 @@
         <section><h2>Requirements</h2>
           <p> 
             <ul>
-              <li><span class="fontStyleBullet">Video and audio calls</span><br>Traditional options: name of the user, off/on mic and camera settings</li>
-              <li><span class="fontStyleBullet">Break-out rooms</span>Enabling split meeting session rooms</li>
-               <li><span class="fontStyleBullet">Messages</span><br>Both personal and group messages</li>
-               <li><span class="fontStyleBullet">Hybrid situation meetings</span><br>Some people are together offline in the same room, and the others are distributed online</li>
-               <li><span class="fontStyleBullet">Live collaborative creation</span><br>you can choose what kind of content (text, audio, pic, video)</li>
+              <li><span class="fontStyleBullet">Video and audio calls with breakout rooms</span></li>
+               <li><span class="fontStyleBullet">Personal and group messages</span></li>
+               <li><span class="fontStyleBullet">Hybrid situation meetings</span><br>When some people sit in the same room, and others are joined from elsewhere.</li>
+               <li><span class="fontStyleBullet">Live collaborative creation</span><br>We chose to have a backlog feature that could be used during meetings.</li>
             </ul>
           </p>
 
-          <p>For the live collaborative creation we chose to have a backlog.</p>
-
        </section>
 
-        <section class="userflow"><h2>Wire framing</h2>
-          <img src="result.png">
+        <section class="userflow"><h2>Wireframes</h2>
+          <img src="pictures/wireframes.png">
           <p>
-            A lot of time was spent on the ideation and wireframing to determine the best user flow.
+            Time was spent on the ideation and wireframing to explore different user flows. The two areas that we focused on the most were how to join a hybrid meeting and how to reach and use the to-do list during meetings.
           </p>
         </section>
 
-        <section class="reflection" id="reflectionDiv"><h2>Reflection</h2>
+        <section><h2>Result</h2>
           <p>
-          Only habing 2 days to complete the 
+          <b>Join a hybrid meeting</b><br>
+          <img src="pictures/hybrid.png"><br>
+          <ol>
+              <li><span class="fontStyleBullet">Project page</span><br> Here all the tasks within the project can be seen. Swipe right to see other projects.</li>
+              <li><span class="fontStyleBullet">Task room</span><br>The details about the tasks can be seen and edited here. Meeting for all the people working on the task can be joined and created here.</li>
+              <li><span class="fontStyleBullet">Join hybrid meeting</span><br>With the help of the GPS location, the app interferes if you are close to another person in the meeting and when choosing that option, the settings for mics and speakers are adjusted to prevent audio feedback. </li>
+              <li><span class="fontStyleBullet">Video meeting</span><br>See the description below for details on the video conference settings.</li>
+            </ol>
+          </p>
+
+          <p>
+          <b>Meeting</b><br>
+          <img src="pictures/meeting.png"><br>
+          An explanatory overlay pops up when the user enters a meeting for the first time. 6 participants in the meeting are displayed on the screen, simply swipe for more people.
+          To access the task page the users have three options. There is a simplified task page in the meeting that can be accessed by either swiping to the first page of the meeting or using the more options menu. The third option is to minimize the meeting view to reveal the task page with all details. Standard video conferencing settings can be found at the bottom of the page.
+          </p>
+        </section>
+
+        <section><h2>Reflection</h2>
+          <p>
+          We were a group of 5 people working on this project. When we went from wireframing to designing the hi-fi prototype, it became noticeable that we all had different styles when designing. Some preferred having larger text and bigger components, while others kept it smaller. People also had different ways of grouping items. Halfway through designing we had to create some sort of guidelines regarding the sizing and spacing of elements. Designing a coherent interface together with other people is something you'd do in real life, and I think this project taught me a lot about that!
           </p>
         </section>
       </div>

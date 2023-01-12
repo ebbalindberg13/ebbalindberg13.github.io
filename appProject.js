@@ -1,11 +1,7 @@
-console.log("I'm aliiiive");
-
 var projectGrid = document.getElementById("projectGrid");
-//var projectGridInfo = projectGrid.getBoundingClientRect();
 
 var purpleWhenScrolling = function() {
 	if(230 >= window.scrollY && window.scrollY > 200) {
-		console.log("hi");
 		document.documentElement.style
 			.setProperty('--main-color', '#ffaa33');
 	} 
@@ -54,15 +50,17 @@ var section = document.querySelectorAll("section");
 function activeSideNav() {
 	let length = section.length;
 	while(--length && window.scrollY < section[length].getBoundingClientRect().y + window.scrollY) {
-		sideNavLinks.forEach(item => item.classList.remove("active"));
-		sideNavLinks[(length - 1)].classList.add("active");
+		
+			if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+			sideNavLinks.forEach(item => item.classList.remove("active"));
+			sideNavLinks[(length)].classList.add("active");
+		}
+
+		else{	sideNavLinks.forEach(item => item.classList.remove("active"));
+		sideNavLinks[(length - 1)].classList.add("active");}
+	
 	}
 
-	if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-			sideNavLinks.forEach(item => item.classList.remove("active"));
-			sideNavLinks[(length + 1)].classList.add("active");
-			console.log('eeey?');
-		}
 }
 activeSideNav();
 window.addEventListener("scroll", activeSideNav);
@@ -84,7 +82,7 @@ var windowView = document.querySelector('.projectInfo');
 
 function animateProgressBar() {
 	let scroll = windowView.getBoundingClientRect().top;
-	let scrollPercentage = (scroll / - (windowView.getBoundingClientRect().height - window.innerHeight - document.querySelector('.footer').getBoundingClientRect().height)) * 100;
+	let scrollPercentage = (scroll / - (windowView.getBoundingClientRect().height - window.innerHeight + document.querySelector('.footer').getBoundingClientRect().height + 60)) * 100;
 	let scrollInt = Math.floor(scrollPercentage);
 	progressBar.style.width = scrollInt + "%"
 
@@ -103,7 +101,6 @@ hamburgerMenu.addEventListener('click', function () {
 	item.classList.toggle("b");
 })
 	listMenu.classList.toggle("v");
-	console.log('hir')
 
 });
 

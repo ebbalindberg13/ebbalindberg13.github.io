@@ -2,10 +2,17 @@
   --main-color: #ffa930;
   --neutral--color: #F9F4EC;
   --accent--color: #D1CFED;
-  --edge-margin: 150px;
+  --edge-margin: 200px;
   --header-height: 60px;
   transition: all 2s ease;
 }
+
+@media only screen and (max-width: 1800px) {
+    :root {
+        --edge-margin:150px
+    }
+
+ }  
 
     @media only screen and (max-width: 1100px) {
     :root {
@@ -16,7 +23,7 @@
 
  @media only screen and (max-width: 700px) {
     :root {
-        --edge-margin:20px
+        --edge-margin:30px
     }
 }
 
@@ -159,6 +166,7 @@ align-content: center;
 #presentationBox {
   height:330px;
   width: 95%;
+  max-width:1200px;
   background-color: var(--neutral--color);
   position: relative;
   margin: auto;
@@ -298,7 +306,7 @@ left:-36px;
 }
 
 .sideNav div{
-    width:70px;
+    width:80px;
     list-style: none;
     text-align: right;
     left:0;
@@ -390,7 +398,7 @@ text-align:center;
     opacity: 1;
     margin-top: 0px;
     transition: margin-top 1s ease,opacity 1s ease;
-    transition-delay: 0.3s;
+    transition-delay: 0.1s;
 }
 
 .hamburgerMenu {
@@ -534,6 +542,7 @@ section, h1,h2 {
     width: calc(100% - var(--edge-margin) * 2);
     margin:auto;
     margin-top: calc(var(--header-height)*2);
+    max-width:1400px;
 }
 
 .aboutGrid {

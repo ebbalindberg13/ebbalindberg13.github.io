@@ -1,20 +1,8 @@
-console.log("I'm aliiiive");
 
 var projectGrid = document.getElementById("projectGrid");
-//var projectGridInfo = projectGrid.getBoundingClientRect();
 
 var sideNavLinks = document.querySelectorAll(".sideNav div");
 var section = document.querySelectorAll("section");
-
-// function activeSideNav() {
-// 	let length = section.length;
-// 	while(--length && window.scrollY < section[length].getBoundingClientRect().y + window.scrollY) {
-// 		sideNavLinks.forEach(item => item.classList.remove("active"));
-// 		sideNavLinks[(length - 1)].classList.add("active");
-// 	}
-// }
-// activeSideNav();
-// window.addEventListener("scroll", activeSideNav);
 
 var cards = document.querySelectorAll(".gridItem");
 
